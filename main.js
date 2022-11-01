@@ -143,7 +143,7 @@ async function expired() {
 			if (users.sewa) {
 				if (users.limitjoinprem == 0) {
 					users.sewa = false
-					users.limitjoinfree = 1
+					users.limitjoinfree = 100
 				}
 			}
 		}
