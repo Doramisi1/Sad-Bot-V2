@@ -41,7 +41,7 @@ global.tiny = (await import('./lib/tiny.cjs')).default
 global.gc = "https://chat.whatsapp.com/KYIzgolOI1I66efv9UMfch"
 global.gh = "https://github.com/Doramisi1
 global.yt = "https://bit.ly/Papah-Chan"
-global.wm = '                「 ꜱᴀᴅ BOT あ⁩ 」' 
+global.wm = '            [ SAD BOT ]    '
 global.wm2 = '™ cowok-ganteng ™'
 global.wm3 = '⫹⫺ ꜱᴀᴅ 𝗕𝗢𝗧'
 function ucapan() {
