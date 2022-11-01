@@ -63,7 +63,7 @@ export async function handler(chatUpdate) {
 				if (!isNumber(user.exp))
 					user.exp = 0
 				if (!isNumber(user.limit))
-					user.limit = 10
+					user.limit = 1000
 				if (!isNumber(user.lastclaim))
 					user.lastclaim = 0
 				if (!('registered' in user))
@@ -92,7 +92,7 @@ export async function handler(chatUpdate) {
 					user.autolevelup = true
 
 				if (!isNumber(user.money))
-					user.money = 0
+					user.money = 10000
 				if (!isNumber(user.atm))
 					user.atm = 0
 				if (!isNumber(user.fullatm))
@@ -104,7 +104,7 @@ export async function handler(chatUpdate) {
 				if (!isNumber(user.stamina))
 					user.stamina = 100
 				if (!isNumber(user.limit))
-					user.limit = 0
+					user.limit = 1000
 				if (!isNumber(user.potion))
 					user.potion = 0
 				if (!isNumber(user.trash))
@@ -452,15 +452,15 @@ export async function handler(chatUpdate) {
 				if (!('sewa' in user))
 					user.sewa = false
 				if (!isNumber(user.limitjoinprem))
-					user.limitjoinprem = 0
+					user.limitjoinprem = 100
 				if (!isNumber(user.limitjoinfree))
-					user.limitjoinfree = 1
+					user.limitjoinfree = 100
 				if (!('pasangan' in user))
 					user.pasangan = ''
 			} else
 				db.data.users[m.sender] = {
 					exp: 0,
-					limit: 10,
+					limit: 1000,
 					lastclaim: 0,
 					registered: false,
 					name: m.name,
@@ -474,13 +474,13 @@ export async function handler(chatUpdate) {
 					role: 'Beginner',
 					autolevelup: true,
 
-					money: 0,
+					money: 10000,
 					bank: 0,
 					atm: 0,
 					fullatm: 0,
 					health: 100,
 					stamina: 100,
-					limit: 100,
+					limit: 1000,
 					potion: 10,
 					trash: 0,
 					wood: 0,
@@ -654,8 +654,8 @@ export async function handler(chatUpdate) {
 					ayam: 0,
 					premium: false,
 					expired: 0,
-					limitjoinfree: 1,
-					limitjoinprem: 0,
+					limitjoinfree: 100,
+					limitjoinprem: 100,
 					sewa: false,
 					pasangan: ''
 				}
@@ -670,7 +670,7 @@ export async function handler(chatUpdate) {
 				if (!('simi' in chat))
 					chat.simi = false
 				if (!('welcome' in chat))
-					chat.welcome = false
+					chat.welcome = true
 				if (!('detect' in chat))
 					chat.detect = false
 				if (!('sWelcome' in chat))
@@ -704,7 +704,7 @@ export async function handler(chatUpdate) {
 					isBanned: false,
 					stiker: false,
 					simi: false,
-					welcome: false,
+					welcome: true,
 					detect: false,
 					sWelcome: '',
 					sBye: '',
